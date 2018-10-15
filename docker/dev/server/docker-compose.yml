@@ -5,7 +5,7 @@ services:
       context: ../../../
       dockerfile: docker/dev/server/Dockerfile
     volumes:
-      - ../../../server:/go/src/app
+      - ../../../server:/go/src/server
     ports:
       - '5000:5000'
     env_file:
