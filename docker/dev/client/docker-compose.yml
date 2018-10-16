@@ -12,3 +12,7 @@ services:
       - ../../../client/.env
     environment:
       PORT: 8080
+networks:
+  default:
+    external:
+      name: mole-local-network
