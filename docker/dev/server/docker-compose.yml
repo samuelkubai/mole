@@ -12,3 +12,7 @@ services:
       - ../../../server/.env
     environment:
       PORT: 5000
+networks:
+  default:
+    external:
+      name: mole-local-network
