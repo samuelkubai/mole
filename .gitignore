@@ -1,0 +1,7 @@
+# Don't commit the vendor packages for the various applications
+client/vendor
+server/vendor
+
+# Don't commit the tmp files build by the Golang runner
+client/tmp
+server/tmp
