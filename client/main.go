@@ -14,13 +14,13 @@ func main() {
   go http.ListenAndServe(":5000", nil)
 
   cfg := &tunnel.ClientConfig{
-	Identifier: "123456",
-	ServerAddr: "server:5000",
+    Identifier: "123456",
+    ServerAddr: "server:5000",
   }
 
   client, err := tunnel.NewClient(cfg)
   if err != nil {
-	panic(err)
+	  panic(err)
   }
 
   client.Start()
