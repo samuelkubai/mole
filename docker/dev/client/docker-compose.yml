@@ -6,12 +6,8 @@ services:
       dockerfile: docker/dev/client/Dockerfile
     volumes:
       - ../../../client:/go/src/client
-    ports:
-      - '8080:8080'
     env_file:
       - ../../../client/.env
-    environment:
-      PORT: 8080
 networks:
   default:
     external:
