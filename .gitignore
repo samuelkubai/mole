@@ -10,4 +10,6 @@ server/tmp
 client/.realize.yaml
 
 // Avoid .swp files
-**/**/*.swp
+*~
+*.swp
+*.swo
