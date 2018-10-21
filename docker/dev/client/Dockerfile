@@ -13,6 +13,6 @@ CMD if [ ${APP_ENV} = production ]; \
 	then \
 	client; \
 	else \
-	go get github.com/pilu/fresh && \
-	fresh; \
+    go get github.com/oxequa/realize && \
+    realize start --name="mole-client" --install; \
 	fi

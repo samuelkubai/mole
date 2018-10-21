@@ -21,7 +21,14 @@ docker network create -d bridge mole-local-network
 To run the mole client, run;
 
 ```
+// Start the mole client
 make local-client
+
+// Access the mole client environment
+make client-ssh
+
+// Run the mole client commands
+../../bin/client [COMMAND]
 ```
 
 To run the mole server, run;

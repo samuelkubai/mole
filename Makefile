@@ -58,7 +58,6 @@ clean:
 	${INFO} "Note all ephemeral volumes will be destroyed"
 	@ docker-compose -f $(DOCKER_SERVER_DEV_COMPOSE) down -v
 	@ docker-compose -f $(DOCKER_CLIENT_DEV_COMPOSE) down -v
-	@ docker-compose -f $(DOCKER_TEST_COMPOSE_FILE) down -v
 	@ docker images -q -f label=application=$(PROJECT_NAME) | xargs -I ARGS docker rmi -f ARGS
 	${INFO} "Removing dangling images"
 	@ docker images -q -f dangling=true -f label=application=$(PROJECT_NAME) | xargs -I ARGS docker rmi -f ARGS
